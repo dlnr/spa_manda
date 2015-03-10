@@ -16,4 +16,6 @@ add_action( 'wp_enqueue_scripts', 'spamanda_scripts' );
 
 add_filter('show_admin_bar', '__return_false');
 
+
+
 ?>
