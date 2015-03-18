@@ -2,6 +2,8 @@
 
 get_header();
 
+while ( have_posts() ) : the_post();
+
 ?>
 
 <div class="underslider2a">
@@ -14,17 +16,19 @@ get_header();
   </div>
 </div>
 
-<?php
-the_post_thumbnail();
-?>
+<main>
+  <div class="container">
 
-<div class="container">
-  <?php the_content(); ?>
-</div>
+    <?php the_content(); ?>
+
+  </div>
+</main>
 
 <?php
 
 print_r(the_meta());
+
+endwhile;
 
 get_footer();
 
