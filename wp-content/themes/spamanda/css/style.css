@@ -221,65 +221,66 @@ height:10px;
 
 
 
-#menu
+nav.menu
 {
 margin-top:0;
 list-style: none;
 float:right;
 margin-right:-18px;
+
 }
 
-#menu li
-{height:55px;
+nav.menu li
+{
+	height:55px;
 	padding:65px 23px 0 23px;
 	float: left;
 	transition: all .3s;
--moz-transition: all .3s;
--webkit-transition:all .3s;
--o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition:all .3s;
+	-o-transition: all .3s;
 	position: relative;
 	line-height: 0;
-
 }
 
-#menu .menu1:hover
+nav.menu .menu1:hover
 {
 background:#3a4d40;
 
 }
 
-#menu li .mainmenu {
-background: url(../images/menushape.png) bottom center no-repeat;
+nav.menu li a {
+/*background: url(../images/menushape.png) bottom center no-repeat;*/
 height:20px;
 width:100%;
 color:#3a4d40;
 }
 
-#menu li:hover .mainmenu {
+nav.menu li:hover a {
 background: url(../images/menushapehover.png) bottom center no-repeat;
 color:#fff;
 }
 
-#menu li .mainmenulast {
+nav.menu li:last-child a {
 background:none;
 }
-#menu li:hover .mainmenulast {
+nav.menu li:hover a {
 background:none;
 }
 
 
-#menu a
+nav.menu a
 {
 font-size:16px;
 float: left;
 text-transform: uppercase;
 }
-#menu li .mainmenu:hover a
+nav.menu li .mainmenu:hover a
 {
 }
 
 
-#menu li:hover > ul
+nav.menu li:hover > ul
 {
 display: block;
 }

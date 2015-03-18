@@ -15,12 +15,16 @@ get_header();
 </div>
 
 <?php
-
 the_post_thumbnail();
+?>
 
-print_r($post);
+<div class="container">
+  <?php the_content(); ?>
+</div>
+
+<?php
+
 print_r(the_meta());
-
 
 get_footer();
 

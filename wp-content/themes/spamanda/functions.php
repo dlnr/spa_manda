@@ -19,6 +19,11 @@ add_filter( 'show_admin_bar', '__return_false' );
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'massage-thumb', 220, 220, true );
 
+register_nav_menus( array(
+	'primary' => __( 'Primary Navigation', 'main-nav' ),
+	'secondary' => __( 'Footer Navigation', 'footer nav' )
+) );
+
 // Register Custom Post Type
 function massage() {
 
