@@ -43,7 +43,7 @@
       <div class="row">
 
         <section class="logo span3">
-        <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="logo"></a>
+        <a href="/"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="logo"></a>
         </section>
 
         <nav class="menu span9">
