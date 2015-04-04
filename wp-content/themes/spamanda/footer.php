@@ -36,36 +36,36 @@
 
 
 <script>//<![CDATA[
-$('html, body').ready(function(){
-jQuery('#camera_wrap').camera({
-thumbnails:false
-});
-});
+// $('html, body').ready(function(){
+// jQuery('#camera_wrap').camera({
+// thumbnails:false
+// });
+// });
 </script>
 
 
 
 <script>//<![CDATA[
-$('html, body').ready(function(){
-jQuery('#mycollapsible').collapse("hide");
+// $('html, body').ready(function(){
+// jQuery('#mycollapsible').collapse("hide");
 //]]></script>
 
 
 
 <script>//<![CDATA[
-function scrollToTop() {
-$('html, body').animate({scrollTop:0}, 'slow');
-}
+// function scrollToTop() {
+// $('html, body').animate({scrollTop:0}, 'slow');
+// }
 //]]></script>
 
 <script>//<![CDATA[
-$('.collapse').live('show', function(){
-    $(this).parent().find('.accordion-heading').addClass('open'); //add active state to button on open
-});
+// $('.collapse').live('show', function(){
+//     $(this).parent().find('.accordion-heading').addClass('open'); //add active state to button on open
+// });
 
-$('.collapse').live('hide', function(){
-    $(this).parent().find('.accordion-heading').removeClass('open'); //remove active state to button on close
-});
+// $('.collapse').live('hide', function(){
+//     $(this).parent().find('.accordion-heading').removeClass('open'); //remove active state to button on close
+// });
 //]]></script>
 
 <!-- <script src="js/camera.js"></script> -->

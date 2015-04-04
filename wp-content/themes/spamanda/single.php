@@ -42,15 +42,14 @@ while ( have_posts() ) : the_post();
 
       <?php
         $rates = get_post_meta($post->ID);
-        $rate1 = $rates['30_min'][0];
-        $rate2 = $rates['1_hour'][0];
-        $rate3 = $rates['1.5_hour'][0];
-        $rate4 = $rates['2_hour'][0];
-        $rate5 = $rates['3_hour'][0];
-        // the_meta();
-
-        // print_r($rate1);
-
+        if (isset($rates)) {
+          $rate1 = $rates['30_min'][0];
+          $rate2 = $rates['1_hour'][0];
+          $rate3 = $rates['1.5_hour'][0];
+          $rate4 = $rates['2_hour'][0];
+          $rate5 = $rates['3_hour'][0];
+        }
+        
         if ($rate1 != '') {
         ?>
         <div class="span3  services">

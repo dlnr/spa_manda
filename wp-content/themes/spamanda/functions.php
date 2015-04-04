@@ -6,7 +6,7 @@ function spamanda_scripts() {
 	wp_enqueue_style( 'style-spamanda', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', false );
   wp_enqueue_style( 'style-media', get_template_directory_uri() . '/css/media.css', array(), '1.0.0', false );
   wp_enqueue_style( 'style-camera', get_template_directory_uri() . '/css/camera.css', array(), '1.0.0', false );
-  wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.js', array('jquery'), '1.0.0', true );
   wp_enqueue_script( 'jquery-camera', get_template_directory_uri() . '/js/camera.js', array(), '1.0.0', true );
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '1.0.0', true );

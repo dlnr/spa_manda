@@ -6,8 +6,6 @@
     <title><?php wp_title(); ?></title>
 
     <meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +36,7 @@
   </div>
 
 
-  <header class="menuwrapperdesktop">
+  <header class="menuwrapper">
     <div class="container">
       <div class="row">
 
