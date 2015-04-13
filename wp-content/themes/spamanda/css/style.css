@@ -250,10 +250,9 @@ background:#3a4d40;
 }
 
 nav.menu li a {
-/*background: url(../images/menushape.png) bottom center no-repeat;*/
-height:20px;
-width:100%;
-color:#3a4d40;
+	height:20px;
+	width:100%;
+	color:#3a4d40;
 }
 
 nav.menu li:hover a {
@@ -1946,7 +1945,7 @@ font-family:"rouge script";
 font-size:36px;
 color:#7d1551;
 text-align:center;
-padding-top:21px;
+/*padding-top:21px;*/
 margin:0;
 border-bottom:1px dashed #3a4d40;
 border-top:1px dashed #3a4d40;
@@ -1959,7 +1958,7 @@ font-size:48px;
 color:#384c3f;
 text-transform:uppercase;
 text-align:left;
-margin-top:30px;
+/*margin-top:30px;*/
 }
 
 .underslider2a h2 span
