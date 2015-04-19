@@ -202,6 +202,9 @@ nav.menu {
   background-image: url(../images/menu.png);
   background-repeat: no-repeat;
 }
+body.menu-open #toggle-menu {
+	background-image: url(../images/close.png);
+}
 nav.menu li {
   height: 55px;
   padding: 65px 23px 0 23px;
@@ -213,24 +216,24 @@ nav.menu li {
   position: relative;
   line-height: 0;
 }
-nav.menu .menu1:hover {
-  background: #3a4d40;
+nav.menu a:hover {
+  background: none;
 }
 nav.menu li a {
   height: 20px;
   width: 100%;
   color: #3a4d40;
 }
-nav.menu li:hover a {
+/*nav.menu li:hover a {
   background: url(../images/menushapehover.png) bottom center no-repeat;
   color: #fff;
-}
-nav.menu li:last-child a {
+}*/
+/*nav.menu li:last-child a {
   background: none;
 }
 nav.menu li:hover a {
   background: none;
-}
+}*/
 nav.menu a {
   font-size: 16px;
   float: left;
