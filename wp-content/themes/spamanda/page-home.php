@@ -19,7 +19,7 @@ get_header();
 <?php
 $args = array(
 	'post_type' => 'massage',
-  'post_count' => 3
+  'posts_per_page' => 3
 );
 $query = new WP_Query( $args );
 
