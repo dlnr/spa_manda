@@ -42,11 +42,14 @@
             'container' => '',
             'container_class' => '',
             'menu' => 'Main Navigation',
-            'menu_class' => 'menu'
+            'menu_class' => 'main-navigation'
             );
             wp_nav_menu($args);
           ?>
         </nav>
+
+        <button id="toggle-menu"></button>
+
       </div>
     </div>
   </header>
