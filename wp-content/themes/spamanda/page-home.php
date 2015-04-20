@@ -46,7 +46,8 @@ if ( $query->have_posts() ) {
     <div class="decoration">
     </div>
 
-    <?php the_content(''); ?>
+    <?php //the_content(''); ?>
+    <?php $content = get_the_content(); echo mb_strimwidth($content, 0, 125, '...');?>
 
     <section class="button1">
       <a href="<?php the_permalink(); ?>">lees meer</a>

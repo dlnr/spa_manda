@@ -53,23 +53,16 @@ if ( $query->have_posts() ) {
         ?>
       </div>
 
-      <div class="span3">
+      <div class="pricing">
 
         <?php
           $rates = get_post_meta($post->ID);
-          if (isset($rates)) {
-            $rate1 = $rates['30_min'][0];
-            $rate2 = $rates['1_hour'][0];
-            $rate3 = $rates['1.5_hour'][0];
-            $rate4 = $rates['2_hour'][0];
-            $rate5 = $rates['3_hour'][0];
-          }
 
-          if ($rate1 != '') {
+          if ($rates['30_min'][0] != '') {
           ?>
           <div class="span3  services">
             <div class="serviceprice">
-              <a href="">€ <?php echo $rate1; ?></a>
+              <a href="">€ <?php echo $rates['30_min'][0]; ?></a>
             </div>
             <div class=" servicehour">
               <p>30 Min</p>
@@ -77,11 +70,11 @@ if ( $query->have_posts() ) {
           </div>
           <?php
           }
-          if ($rate2 != '') {
+          if ($rates['1_hour'][0] != '') {
           ?>
           <div class="span3  services">
             <div class="serviceprice">
-              <a href="">€ <?php echo $rate2; ?></a>
+              <a href="">€ <?php echo $rates['1_hour'][0]; ?></a>
             </div>
             <div class=" servicehour">
               <p>1hr</p>
@@ -89,11 +82,11 @@ if ( $query->have_posts() ) {
           </div>
           <?php
           }
-          if ($rate3 != '') {
+          if ($rates['1.5_hour'][0] != '') {
           ?>
           <div class="span3  services">
             <div class="serviceprice">
-              <a href="">€ <?php echo $rate3; ?></a>
+              <a href="">€ <?php echo $rates['1.5_hour'][0]; ?></a>
             </div>
             <div class=" servicehour">
               <p>1,5hr</p>
@@ -101,11 +94,23 @@ if ( $query->have_posts() ) {
           </div>
           <?php
           }
-          if ($rate4 != '') {
+          if ($rates['2_hour'][0] != '') {
           ?>
           <div class="span3  services">
             <div class="serviceprice">
-              <a href="">€ <?php echo $rate4; ?></a>
+              <a href="">€ <?php echo $rates['2_hour'][0]; ?></a>
+            </div>
+            <div class=" servicehour">
+              <p>2hr</p>
+            </div>
+          </div>
+          <?php
+          }
+          if ($rates['3_hour'][0] != '') {
+          ?>
+          <div class="span3  services">
+            <div class="serviceprice">
+              <a href="">€ <?php echo $rates['3_hour'][0]; ?></a>
             </div>
             <div class=" servicehour">
               <p>2hr</p>
