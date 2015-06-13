@@ -5,11 +5,10 @@ get_header();
 ?>
 
 <div id="Contact">
-    <div class="underslider2">
-
-        <div class="container">
-            <div class="row">
-                <div class="span6">
+  <div class="underslider2a">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
 
                     <h2>contact<span></span></h2>
 
