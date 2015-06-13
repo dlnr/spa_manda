@@ -352,7 +352,7 @@ nav.menu li:hover > ul {
 }
 .spaheadline {
   height: auto;
-  width: 246px;
+  /*width: 246px;*/
   margin: 0 auto;
   padding-bottom: 2px;
   text-align: center;
