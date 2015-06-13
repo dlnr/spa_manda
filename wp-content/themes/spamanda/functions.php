@@ -56,7 +56,7 @@ function massage() {
 		'supports'            => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => false,
-		'public'              => true,
+		'public'              => false,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => true,
@@ -76,6 +76,59 @@ function massage() {
 
 // Hook into the 'init' action
 add_action( 'init', 'massage', 0 );
+
+
+// Register Custom Post Type
+function beautycare() {
+
+	$labels = array(
+		'name'                => _x( 'Beautycares', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Beautycare', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Beautycares', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Beautycare:', 'text_domain' ),
+		'all_items'           => __( 'All Beautycares', 'text_domain' ),
+		'view_item'           => __( 'View Beautycare', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Beautycare', 'text_domain' ),
+		'add_new'             => __( 'Add New', 'text_domain' ),
+		'edit_item'           => __( 'Edit Beautycare', 'text_domain' ),
+		'update_item'         => __( 'Update Beautycare', 'text_domain' ),
+		'search_items'        => __( 'Search Beautycares', 'text_domain' ),
+		'not_found'           => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$rewrite = array(
+		'slug'                => 'beautycare',
+		'with_front'          => true,
+		'pages'               => true,
+		'feeds'               => true,
+	);
+	$args = array(
+		'label'               => __( 'beautycare', 'text_domain' ),
+		'description'         => __( 'Post een beautycare', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions' ),
+		'taxonomies'          => array( 'category', 'post_tag' ),
+		'hierarchical'        => false,
+		'public'              => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 6,
+		'menu_icon'           => 'dashicons-smiley',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'rewrite'             => $rewrite,
+		'capability_type'     => 'post',
+	);
+	register_post_type( 'beautycare', $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'beautycare', 0 );
 
 
 

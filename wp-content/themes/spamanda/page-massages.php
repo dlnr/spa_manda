@@ -4,13 +4,15 @@ get_header();
 
 ?>
 
-<!-- <div class="underslider1a">
+<div class="underslider2a">
   <div class="container">
     <div class="row">
-      <h1>Homepage</h1>
+      <div class="span12">
+        <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+      </div>
     </div>
   </div>
-</div> -->
+</div>
 
 
 <div class="container">
@@ -31,6 +33,7 @@ if ( $query->have_posts() ) {
   ?>
 
   <div class="span12  tabinside">
+    <a name="<?php echo $post->post_name; ?>"></a>
     <?php the_title( '<h4>', '</h4>' ); ?>
     <div class="row">
       <div class="span3">

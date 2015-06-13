@@ -18,10 +18,13 @@ get_header();
 
 <?php
 $args = array(
-	'post_type' => 'massage',
+	'post_type' => array('massage'),
+  'category_name' => 'homepage',
   'posts_per_page' => 3
 );
 $query = new WP_Query( $args );
+
+// print_r($query);
 
 
 if ( $query->have_posts() ) {
@@ -50,7 +53,7 @@ if ( $query->have_posts() ) {
     <?php $content = get_the_content(); echo mb_strimwidth($content, 0, 125, '...');?>
 
     <section class="button1">
-      <a href="<?php the_permalink(); ?>">lees meer</a>
+      <a href="/massages/#<?php echo $post->post_name; ?>">lees meer</a>
     </section>
 
   </div>
