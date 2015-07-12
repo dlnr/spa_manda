@@ -50,13 +50,22 @@ if ( $query->have_posts() ) {
 
       </div> -->
 
-      <div class="span12">
+      <div class="span7">
         <?php
           the_content();
         ?>
       </div>
 
-
+      <div class="span5 pricing">
+        <?php
+        $price = get_post_meta($post->ID);
+        ?>
+        <div class="span5 service">
+          <div class="serviceprice">
+            <a href="">€ <?php echo $price['price'][0]; ?></a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

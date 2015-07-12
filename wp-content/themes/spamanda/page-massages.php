@@ -50,20 +50,20 @@ if ( $query->have_posts() ) {
 
       </div> -->
 
-      <div class="span9">
+      <div class="span7">
         <?php
           the_content();
         ?>
       </div>
 
-      <div class="pricing">
+      <div class="span5 pricing">
 
         <?php
           $rates = get_post_meta($post->ID);
 
           if ($rates['30_min'][0] != '') {
           ?>
-          <div class="span3  services">
+          <div class="span5 services">
             <div class="serviceprice">
               <a href="">€ <?php echo $rates['30_min'][0]; ?></a>
             </div>
@@ -75,7 +75,7 @@ if ( $query->have_posts() ) {
           }
           if ($rates['1_hour'][0] != '') {
           ?>
-          <div class="span3  services">
+          <div class="span5 services">
             <div class="serviceprice">
               <a href="">€ <?php echo $rates['1_hour'][0]; ?></a>
             </div>
@@ -87,7 +87,7 @@ if ( $query->have_posts() ) {
           }
           if ($rates['1.5_hour'][0] != '') {
           ?>
-          <div class="span3  services">
+          <div class="span5 services">
             <div class="serviceprice">
               <a href="">€ <?php echo $rates['1.5_hour'][0]; ?></a>
             </div>
@@ -99,7 +99,7 @@ if ( $query->have_posts() ) {
           }
           if ($rates['2_hour'][0] != '') {
           ?>
-          <div class="span3  services">
+          <div class="span5 services">
             <div class="serviceprice">
               <a href="">€ <?php echo $rates['2_hour'][0]; ?></a>
             </div>
@@ -111,7 +111,7 @@ if ( $query->have_posts() ) {
           }
           if ($rates['3_hour'][0] != '') {
           ?>
-          <div class="span3  services">
+          <div class="span5 services">
             <div class="serviceprice">
               <a href="">€ <?php echo $rates['3_hour'][0]; ?></a>
             </div>
