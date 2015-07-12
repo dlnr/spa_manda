@@ -36,21 +36,21 @@ if ( $query->have_posts() ) {
     <a name="<?php echo $post->post_name; ?>"></a>
     <?php the_title( '<h4>', '</h4>' ); ?>
     <div class="row">
-      <div class="span3">
+      <!-- <div class="span3">
 
         <ul class="ch-grid4">
           <li>
             <div class="ch-item4 specialimg1">
               <?php
-                the_post_thumbnail( 'massage-thumb' );
+                // the_post_thumbnail( 'massage-thumb' );
               ?>
             </div>
           </li>
         </ul>
 
-      </div>
+      </div> -->
 
-      <div class="span6">
+      <div class="span9">
         <?php
           the_content();
         ?>
